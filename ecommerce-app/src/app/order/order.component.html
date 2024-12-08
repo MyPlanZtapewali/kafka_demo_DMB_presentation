@@ -1,0 +1,12 @@
+<h2>Récapitulatif de votre commande</h2>
+<div *ngIf="cart.length > 0; else emptyCart">
+  <ul>
+    <li *ngFor="let product of cart">{{ product.name }} - {{ product.price }}€</li>
+  </ul>
+  <p>Total : {{ total }}€</p>
+  <button (click)="confirmOrder()">Confirmer la commande</button>
+</div>
+
+<ng-template #emptyCart>
+  <p>Votre panier est vide.</p>
+</ng-template>

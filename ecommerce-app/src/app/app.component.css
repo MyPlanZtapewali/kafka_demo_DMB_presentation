@@ -1,0 +1,32 @@
+nav {
+    background-color: #f8f9fa;
+    padding: 10px;
+    z-index: 1;  /* S'assurer que le nav est bien au-dessus d'autres éléments */
+  }
+  
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+  }
+  
+  nav li {
+    margin-right: 15px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #007bff;
+    cursor: pointer; /* Assurer que le lien est cliquable */
+  }
+  
+  nav a:hover {
+    text-decoration: underline;
+  }
+  
+  nav a.active {
+    font-weight: bold;
+    color: #0056b3;
+  }
+  

@@ -1,0 +1,10 @@
+<nav>
+  <ul>
+    <li><a routerLink="/" routerLinkActive="active">Accueil</a></li>
+    <li><a routerLink="/cart" routerLinkActive="active">Panier ({{ cartService.getTotalItems() }})</a></li>
+    <li *ngIf="cartService.getTotalItems() > 0">
+      <a routerLink="/order" routerLinkActive="active">Commander</a>
+    </li>
+  </ul>
+</nav>
+<router-outlet></router-outlet>

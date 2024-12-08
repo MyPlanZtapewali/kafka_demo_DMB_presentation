@@ -1,0 +1,10 @@
+<h1>Votre panier</h1>
+<div *ngIf="cart.length > 0; else emptyCart">
+  <div *ngFor="let product of cart" class="cart-item">
+    <p>{{ product.name }} - {{ product.price }}€</p>
+  </div>
+  <button (click)="clearCart()">Vider le panier</button>
+</div>
+<ng-template #emptyCart>
+  <p>Votre panier est vide.</p>
+</ng-template>
