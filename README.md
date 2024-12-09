@@ -9,6 +9,7 @@
 
 2. Demarre Kafka et zookeeper
 
+Tu te rends en premier lieu dans le dossier kafka.... puis tu lance cette commande
 ``` java
 
 bin/zookeeper-server-start.sh config/zookeeper.properties
