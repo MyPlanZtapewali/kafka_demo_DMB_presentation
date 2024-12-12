@@ -27,15 +27,15 @@ bin/kafka-topics.sh --create \
 On peut aussi voir la liste des topics existants :
 
 ``` java
-
-bin/kafka-topics.sh --create \
---topic <nom de ton topic> \
---bootstrap-server localhost:9092 \
---partitions 1 \
---replication-factor 1
-
+bin/kafka-topics.sh --list --bootstrap-server localhost:9092
 ```
 
+Comment supprimer un topic :
+```java
+kafka-topics.sh --delete --topic <nom de ton topic> --bootstrap-server <your_kafka_broker>
+```
+
+Dans notre cas `<your_kafka_broker>`c'est le `localhost:9092`
 
 4. Vérifie que le topic a été créé :
 
