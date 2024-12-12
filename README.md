@@ -4,9 +4,6 @@
 ./gradlew build
 ```
 
-
-
-
 2. Demarre Kafka et zookeeper
 
 Tu te rends en premier lieu dans le dossier kafka.... puis tu lance cette commande
@@ -27,6 +24,18 @@ bin/kafka-topics.sh --create \
 --replication-factor 1
 
 ```
+On peut aussi voir la liste des topics existants :
+
+``` java
+
+bin/kafka-topics.sh --create \
+--topic <nom de ton topic> \
+--bootstrap-server localhost:9092 \
+--partitions 1 \
+--replication-factor 1
+
+```
+
 
 4. Vérifie que le topic a été créé :
 
