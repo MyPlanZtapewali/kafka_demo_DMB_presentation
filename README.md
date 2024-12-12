@@ -32,7 +32,7 @@ bin/kafka-topics.sh --list --bootstrap-server localhost:9092
 
 Comment supprimer un topic :
 ```java
-kafka-topics.sh --delete --topic <nom de ton topic> --bootstrap-server <your_kafka_broker>
+bin/kafka-topics.sh --delete --topic <nom de ton topic> --bootstrap-server <your_kafka_broker>
 ```
 
 Dans notre cas `<your_kafka_broker>`c'est le `localhost:9092`
